@@ -1,0 +1,35 @@
+{
+    "name": "maxdw/php-tron",
+    "description": "PHP API implementation of the TRON API",
+    "type": "library",
+    "require": {
+
+    },
+    "version": "0.1",
+    "license": "GNU Lesser General Public License v3.0",
+    "authors": [
+        {
+            "name": "Max van Holten",
+            "email": "max@dutchwise.nl"
+        }
+    ],
+    "suggest": {
+        "google/protobuf": "^3.5",
+        "ext-protobuf-3.5.1.1": "PECL equivalent of the google/protobuf requirement",
+        "grpc/grpc": "^1.10",
+        "ext-grpc-1.10.1": "PECL equivalent of the grpc/grpc requirement"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tron\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tron\\": "tests/"
+        }
+    }
+}
+
+
+
