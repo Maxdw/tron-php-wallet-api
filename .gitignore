@@ -1,2 +1,2 @@
-./modules/*
+/modules
 .DS_Store
