@@ -3,10 +3,8 @@
     "description": "PHP API implementation of the TRON API",
     "type": "library",
     "require": {
-
     },
     "require-dev": {
-        "lvht/grpc": ""
     },
     "version": "0.2",
     "license": "GNU Lesser General Public License v3.0",
@@ -33,6 +31,3 @@
         }
     }
 }
-
-
-
