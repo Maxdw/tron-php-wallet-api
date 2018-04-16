@@ -1,0 +1,8 @@
+[submodule "modules/protocol"]
+	path = modules/protocol
+	url = /tronprotocol/protocol
+	branch = master
+[submodule "modules/grpc"]
+	path = modules/grpc
+	url = /grpc/grpc
+	branch = master
