@@ -31,9 +31,13 @@ fi
 
 cd $cwd
 
-protoc \
+if protoc \
     --proto_path=modules/protocol \
     --grpc_out=src \
     --plugin=protoc-gen-grpc=./modules/grpc/bins/opt/grpc_php_plugin \
     --php_out=src \
-    ./modules/protocol/api/api.proto
+    ./modules/protocol/api/api.proto; then
+    echo -e "\033[33m Generated php files\033[0m"
+else
+    echo -e "\033[31m Failed to generate php files\033[0m"
+fi
