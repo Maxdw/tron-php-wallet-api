@@ -3,10 +3,11 @@
     "description": "PHP API implementation of the TRON API",
     "type": "library",
     "require": {
+        "grpc/grpc": "^1.10"
     },
     "require-dev": {
     },
-    "version": "0.4",
+    "version": "0.6",
     "license": "GNU Lesser General Public License v3.0",
     "authors": [
         {
@@ -17,12 +18,12 @@
     "suggest": {
         "google/protobuf": "^3.5",
         "ext-protobuf-3.5.1.1": "PECL equivalent of the google/protobuf requirement",
-        "grpc/grpc": "^1.10",
-        "ext-grpc-1.10.1": "PECL equivalent of the grpc/grpc requirement"
+        "ext-grpc-1.10.1": "PECL extension that is required in combination with the grpc/grpc"
     },
     "autoload": {
         "psr-4": {
-            "Tron\\": "src/"
+            "Protocol\\": "src/Protocol",
+            "GPBMetadata\\": "src/GPBMetadata"
         }
     },
     "autoload-dev": {

@@ -1,11 +1,12 @@
 #!/bin/sh
 
-# Run this script to generate the PHP GRPC client and proto data objects
+# This script helps the developer of this library to update it.
+# Run this to generate the PHP GRPC client and proto data objects.
 #
-# 1. Checks if protoc is installed
-# 2. Checks if grpc submodule needs initialisation
-# 3. Checks if the protoc grpc_php_plugin needs to be built using make
-# 4. Runs protoc and generates PHP GRPC client and proto data objects
+# 1. Checks if protoc is installed.
+# 2. Checks if grpc submodule needs initialisation.
+# 3. Checks if the protoc grpc_php_plugin needs to be built using make.
+# 4. Runs protoc and generates PHP GRPC client and proto data objects.
 
 command -v protoc >/dev/null 2>&1 || {
     echo >&2 "I require bin protoc @ https://github.com/google/protobuf but it is not installed, aborting"; exit 1;
