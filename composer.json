@@ -1,5 +1,5 @@
 {
-    "name": "maxdw/php-wallet-api",
+    "name": "maxdw/tron-php-wallet-api",
     "description": "PHP API implementation of the TRON API",
     "type": "library",
     "require": {
@@ -18,7 +18,7 @@
     "suggest": {
         "google/protobuf": "^3.5",
         "ext-protobuf-3.5.1.1": "PECL equivalent of the google/protobuf requirement",
-        "ext-grpc-1.10.1": "PECL extension that is required in combination with the grpc/grpc"
+        "ext-grpc-1.10.1": "PECL extension that is required in combination with grpc/grpc"
     },
     "autoload": {
         "psr-4": {
